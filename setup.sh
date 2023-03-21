@@ -31,6 +31,7 @@ curl -Ls "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "$home/aw
   sudo $home/aws/install --update
 
 cat << EOF >> $home/.bashrc
+#
 complete -C '/usr/local/bin/aws_completer' aws
 EOF
 
